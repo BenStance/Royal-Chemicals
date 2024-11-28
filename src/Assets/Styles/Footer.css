@@ -1,0 +1,162 @@
+/* Footer Container */
+.footer-container {
+    background-color: #ffffff;
+    color: #0a0a23;
+    font-family: Arial, sans-serif;
+}
+
+/* Map Section */
+.map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* Contact Information Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #1b1b38;
+}
+
+/* Quote Section Styling */
+.quote-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 20px;
+}
+
+.quote-heading {
+    color: #ffd700;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quote-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #1b1b38; /* Dark background color */
+    margin-top: 5px;
+}
+
+/* Contact Info Section Styling */
+.contact-info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    background-color: #310268;
+    color: white;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    padding: 20px;
+}
+
+.contact-heading {
+    color: #ffd700;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #ffd700; /* Golden color */
+    margin-top: 5px;
+}
+
+.contact-info p,
+.contact-info a {
+    color: white;
+    margin: 10px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p svg,
+.contact-info a svg {
+    margin-right: 8px;
+    color: #ffd700;
+}
+
+/* Link Styling */
+.contact-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info a:hover {
+    color: #ffd700; /* Hover color for links */
+}
+
+/* Social Icons Styling */
+.social-icons a {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* Copyright Section */
+.copyright-section {
+    background:linear-gradient(to top, rgb(255, 255, 0),rgba(255,255,0,0.3));
+    color: #0a0a23;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.copyright-section a {
+    color: #0a0a23;
+    text-decoration: none;
+}
+
+.copyright-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .quote-section,
+    .contact-info-section {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-heading {
+        font-size: 1.2rem;
+    }
+
+    .quote-heading {
+        font-size: 1.2rem;
+    }
+}
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,232 @@
+
+  
+  .product-page {
+    background-color: #f8f9fa;
+  }
+  
+  .product-page-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f3a93;
+    margin-bottom: 40px;
+  }
+  
+  .product-category-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Product Card */
+  .product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Image Wrapper */
+  .product-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.1);
+  }
+  
+  /* Hover Overlay */
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-card:hover .hover-overlay {
+    opacity: 1;
+  }
+  
+  .hover-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Product Card Body */
+  .product-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1f3a93;
+  }
+  
+  .product-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    font-size: 1.2rem;
+    color: #ffb400;
+    margin-right: 3px;
+  }
+  
+  .empty-star {
+    color: #ccc;
+  }
+  
+  /* Barcode */
+  .product-barcode {
+    text-align: center;
+  }
+  
+  .barcode-image {
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart-btn {
+    background-color: #1f3a93;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 992px) {
+    .product-name {
+      font-size: 1.15rem;
+    }
+  
+    .add-to-cart-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-page-title {
+      font-size: 2rem;
+    }
+  
+    .product-category-title {
+      font-size: 1.5rem;
+    }
+  
+    .product-card {
+      margin-bottom: 20px;
+    }
+  
+    .product-name {
+      font-size: 1rem;
+    }
+  
+    .add-to-cart-btn {
+      font-size: 0.85rem;
+      padding: 6px 14px;
+    }
+  
+    .barcode-image {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-page-title {
+      font-size: 1.8rem;
+    }
+  
+    .product-category-title {
+      font-size: 1.2rem;
+    }
+  
+    .product-card {
+      margin-bottom: 15px;
+    }
+  
+    .product-name {
+      font-size: 0.9rem;
+    }
+  
+    .add-to-cart-btn {
+      font-size: 0.8rem;
+      padding: 5px 12px;
+    }
+  
+    .barcode-image {
+      width: 70px;
+    }
+  }
+  /* Cart Section */
+.cart-section {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.cart-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cart-items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-item {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.whatsapp-btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
